@@ -1,0 +1,22 @@
+/*!
+ * Digital Workplace Extension using Bootstrap v1.0.0 (http://mypbs.org)
+ */
+
+// Core Global
+// @import "bootstrap/bootstrap";
+
+.myPBS-pillMenu- {
+  @import "bootstrap/bootstrap";
+}
+
+// @import "bootstrap/variables";
+// @import "bootstrap/mixins";
+// @import "bootstrap/grid";
+// @import "bootstrap/list-group";
+// @import "bootstrap/panels";
+// @import "bootstrap/glyphicons";
+
+// PBS
+@import "pbs/pbs-icons";
+@import "pbs/tabs";
+@import "pbs/pill-menu";
