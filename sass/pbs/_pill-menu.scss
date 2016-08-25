@@ -1,36 +1,3 @@
-body {
-  background: #00769d;
-  color: #333;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  /*padding-top: 25px;*/
-  background-position: top center;
-}
-@media only screen and (min-width : 1440px) {
-  body{
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------------------ Desktop CSS ---------------------------------------------*/
 
 .myPBS-pillMenu-expanderMain {
@@ -40,13 +7,14 @@ body {
   display: none;
 }
 .myPBS-pillMenu-wsmenu {
-  font-family: Helvetica, sans-serif;
+  color: #333;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   color: #fff;
   position: relative;
-  font-size: 15px;
   padding: 0px;
   width: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.75);
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
@@ -81,6 +49,7 @@ body {
 }
 .myPBS-pillMenu-wsmenu-list > li:last-child {
   float: right;
+  border-left: solid 1px rgba(255,255,255,0.3);
 }
 .myPBS-pillMenu-arrow:after {
   border-left: 4px solid rgba(0, 0, 0, 0);

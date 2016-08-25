@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'myPBS-pillMenu';
+  src:  url('../fonts/myPBS-pillMenu.eot?d8nii9');
+  src:  url('../fonts/myPBS-pillMenu.eot?d8nii9#iefix') format('embedded-opentype'),
+    url('../fonts/myPBS-pillMenu.ttf?d8nii9') format('truetype'),
+    url('../fonts/myPBS-pillMenu.woff?d8nii9') format('woff'),
+    url('../fonts/myPBS-pillMenu.svg?d8nii9#myPBS-pillMenu') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="myPBS-pillMenu-icon"], [class*=" myPBS-pillMenu-icon"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'myPBS-pillMenu' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.myPBS-pillMenu-icon-logo:before {
+  content: "\e601";
+}
+.myPBS-pillMenu-icon-line-chart:before {
+  content: "\e66e";
+}
+.myPBS-pillMenu-icon-engage:before {
+  content: "\e66f";
+}
+.myPBS-pillMenu-icon-tv:before {
+  content: "\e670";
+}
+.myPBS-pillMenu-icon-gear:before {
+  content: "\e671";
+}
+.myPBS-pillMenu-icon-feeds:before {
+  content: "\e672";
+}
+.myPBS-pillMenu-icon-film-strip:before {
+  content: "\e673";
+}
+
+
