@@ -1,13 +1,20 @@
-.tabs-left {
+.myPBS-pillMenu-container .tabs-left {
 	border-bottom: none;
 }
-.tabs-left li {
+.myPBS-pillMenu-container .tabs-left li {
 	float: none;
 }
-.tabs-left li,
-.tabs-left li.active a,
-.tabs-left li a,
-.tabs-left li a:hover,
-.tabs-left li.active a:hover {
+.myPBS-pillMenu-container .tabs-left li,
+.myPBS-pillMenu-container .tabs-left li.active a,
+.myPBS-pillMenu-container .tabs-left li a,
+.myPBS-pillMenu-container .tabs-left li a:hover,
+.myPBS-pillMenu-container .tabs-left li.active a:hover {
 	border: none !important;
+}
+
+.myPBS-pillMenu-container .nav-tabs > li {
+  float: none;
+}
+.myPBS-pillMenu-container .nav-tabs {
+  border: none;
 }
