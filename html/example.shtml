@@ -10,10 +10,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
 	<!-- Global CSS -->
-	<link rel="stylesheet" type="text/css" media="screen" href="../styles/myPBS-pillMenu.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../dist/css/myPBS-pillMenu.css">
 
 	<!-- Webslide Mega-menu -->
-	<link rel="stylesheet" href="../libs/webslide/full-width-menu/font-awesome/css/font-awesome.min.css" />
+	<!-- <link rel="stylesheet" href="../libs/webslide/full-width-menu/font-awesome/css/font-awesome.min.css" /> -->
 
 	<!-- Webfonts -->
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600">
@@ -310,7 +310,7 @@
 	</div><!-- /myPBS-pillMenu-wsmenucontainer -->
 
 	<!-- Load JavaScript at the Bottom -->
-	<script src="../js/min/main.min.js"></script>
+	<script src="../dist/js/main.min.js"></script>
 
 </body>
 </html>

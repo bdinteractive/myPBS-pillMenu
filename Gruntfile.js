@@ -18,14 +18,14 @@ module.exports = function(grunt) {
 			dev: {
 				options: {
 					sassDir: 'sass',
-					cssDir: 'styles',
+					cssDir: 'dist/css',
 					environment: 'development'
 				}
 			},
 			prod: {
 				options: {
 					sassDir: 'sass',
-					cssDir: 'styles',
+					cssDir: 'dist/css',
 					environment: 'production'
 				}
 			}
@@ -33,10 +33,10 @@ module.exports = function(grunt) {
 		uglify: {
 			all: {
 				files: {
-					'js/min/main.min.js': [
+					'dist/js/main.min.js': [
 						'node_modules/jquery/dist/jquery.js',
-						'js/libs/bootstrap/tab.js',
-						'js/libs/myPBS-pillMenu.js'
+						'node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
+						'js/myPBS-pillMenu.js'
 					]
 				}
 			}

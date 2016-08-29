@@ -5,7 +5,7 @@
 // Core Global
 // @import "bootstrap/bootstrap";
 
-@import "bootstrap/bootstrap";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
 
 // @import "bootstrap/variables";
 // @import "bootstrap/mixins";
@@ -15,6 +15,7 @@
 // @import "bootstrap/glyphicons";
 
 // PBS
+@import "pbs/myPBS-pillMenu-variables";
 @import "pbs/myPBS-pillMenu-icons";
 @import "pbs/tabs";
 @import "pbs/pill-menu";
