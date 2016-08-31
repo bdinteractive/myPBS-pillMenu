@@ -7,7 +7,7 @@ $(function() {
     e.preventDefault();
     $('.myPBS-pillMenu-wsmenu').toggleClass('myPBS-pillMenu-collapsedMenu');
     $('.myPBS-pillMenu-wsmenu').addClass('myPBS-pillMenu-hideMenuSections');
-    $(this).find('i').toggleClass('glyphicon-chevron-right');
+    $(this).find('i').toggleClass('myPBS-pillMenu-icon-chevron-right');
     if(myPBS_PILL_MENU.open == false){
       myPBS_PILL_MENU.open = true;
       setTimeout(myPBSmenuTimer, 500);

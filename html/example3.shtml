@@ -61,7 +61,7 @@
               <div class="myPBS-pillMenu-megamenu clearfix">
                 
                 <!-- tabs left -->
-                <ul class="nav nav-tabs tabs-left col-lg-3">
+                <ul class="nav nav-tabs tabs-left col-lg-2">
                   <li class="active"><a href="#p-schedules" data-toggle="tab">Schedules and Programs</a></li>
                   <li><a href="#myPBS-PM-programOffers" data-toggle="tab">Program Offers</a></li>
                   <li><a href="#myPBS-PM-content" data-toggle="tab">Content Advisories and Flags</a></li>
@@ -72,7 +72,7 @@
                   <li><a href="#">Browse All By List</a></li>
                 </ul>
                   
-                <div class="tab-content col-lg-8">
+                <div class="tab-content col-lg-10">
                   <div class="tab-pane active fade in" id="myPBS-PM-schedules">
                     <div class="row">
                       <div class="col-lg-4 col-md-4 col-xs-12">
@@ -280,7 +280,7 @@
             </li>
             <!-- /end menu -->
 
-						<li><a href="#" class="myPBS-pillMenu-openCloseBtn"><i class="glyphicon glyphicon-chevron-left glyphicon-chevron-right"></i></a></li>
+						<li><a href="#" class="myPBS-pillMenu-openCloseBtn"><i class="myPBS-pillMenu-icon-chevron-left myPBS-pillMenu-icon-chevron-right"></i></a></li>
 
 					</ul>
 				</nav><!--Menu HTML Code-->

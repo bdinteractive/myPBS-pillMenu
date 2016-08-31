@@ -14,6 +14,7 @@
   position: relative;
   padding: 0px;
   width: 100%;
+  // width: 1200px;
   background: rgba(0,0,0,0.75);
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
@@ -93,7 +94,7 @@ ul.myPBS-pillMenu-wsmenu-list > li:last-child {
   z-index: 1000;
   margin: 0px;
   text-align: left;
-  padding: 14px;
+  padding: 0 0 0 14px;
   font-size: 15px;
   border: solid 1px #eeeeee;
   background-color: #fff;
@@ -117,24 +118,49 @@ ul.myPBS-pillMenu-wsmenu-list > li:last-child {
   text-align: left;
   height: 39px;
 }
+.link-list {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+}
 .link-list li {
   display: block;
   text-align: center;
   white-space: nowrap;
   text-align: left;
 }
+.link-list li:before {
+  font-family: 'myPBS-pillMenu' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e080";
+
+  font-size: 8px;
+  position: relative;
+  top: -3px;
+  margin-right: 6px;
+}
 .link-list li a {
   line-height: 18px;
   border-right: none;
   text-align: left;
   padding: 6px 0px;
-  background: #fff !important;
+  // background: #fff !important;
   background-image: none !important;
   color: #666666 !important;
   border-right: 0 none !important;
-  display: block;
+  display: inline-block;
   border-right: 1px solid #e7e7e7;
-  background-color: #fff;
+  // background-color: #fff;
   color: #424242;
 }
 /*Animation*/

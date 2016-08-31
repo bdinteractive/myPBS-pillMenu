@@ -1,15 +1,22 @@
 .myPBS-pillMenu-container .tabs-left {
 	border-bottom: none;
 }
-.myPBS-pillMenu-container .tabs-left li {
-	float: none;
-}
 .myPBS-pillMenu-container .tabs-left li,
+.myPBS-pillMenu-container .tabs-left li.active {
+	float: none;
+  border: none !important;
+}
 .myPBS-pillMenu-container .tabs-left li.active a,
 .myPBS-pillMenu-container .tabs-left li a,
 .myPBS-pillMenu-container .tabs-left li a:hover,
 .myPBS-pillMenu-container .tabs-left li.active a:hover {
-	border: none !important;
+  border: none !important;
+  border-bottom: solid 1px #f3f3f3 !important;
+  border-radius: 0;
+}
+.myPBS-pillMenu-container .tabs-left li.active a,
+.myPBS-pillMenu-container .tabs-left li.active a:hover {
+  background-color: #f3f3f3 !important;
 }
 
 .myPBS-pillMenu-container .nav-tabs > li {
@@ -17,4 +24,9 @@
 }
 .myPBS-pillMenu-container .nav-tabs {
   border: none;
+  padding-top: 14px;
+}
+.myPBS-pillMenu-container .tab-content {
+  background-color: #f3f3f3;
+  padding: 14px 24px;
 }
