@@ -14,22 +14,37 @@
   position: relative;
   padding: 0px;
   width: 100%;
-  // width: 1200px;
+  width: 1200px;
   background: rgba(0,0,0,0.75);
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
+
+
+.myPBS-pillMenu-menuDisabled {
+  width: 420px;
+}
+.myPBS-pillMenu-menuDisabled .myPBS-pillMenu-menuSection {
+  display: none !important;
+}
+
+
+
 .myPBS-pillMenu-openCloseBtn {
   display: inline-block;
   padding: 0 25px;
 }
 
 .myPBS-pillMenu-collapsedMenu {
-  width: 100px;
+  width: 150px;
   overflow: hidden;
   white-space: nowrap;
 }
-.myPBS-pillMenu-hideMenuSections .myPBS-pillMenu-menuSection {
+.myPBS-pillMenu-logo {
+  width: 75px;
+}
+.myPBS-pillMenu-hideMenuSections .myPBS-pillMenu-menuSection,
+.myPBS-pillMenu-hideMenuSections .myPBS-pillMenu-menuDisabledMsg {
   display: none;
 }
 ul.myPBS-pillMenu-wsmenu-list {

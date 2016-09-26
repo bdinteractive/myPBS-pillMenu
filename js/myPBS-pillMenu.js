@@ -3,11 +3,11 @@ $(function() {
   // Animates the menu open and close and shows/hides menu sections
   var myPBS_PILL_MENU = {};
   myPBS_PILL_MENU.open = false;
-  $('.myPBS-pillMenu-openCloseBtn').on('click', function(e){
+  $('.myPBS-pillMenu-openCloseBtn, .myPBS-pillMenu-logo-btn').on('click', function(e){
     e.preventDefault();
     $('.myPBS-pillMenu-wsmenu').toggleClass('myPBS-pillMenu-collapsedMenu');
     $('.myPBS-pillMenu-wsmenu').addClass('myPBS-pillMenu-hideMenuSections');
-    $(this).find('i').toggleClass('myPBS-pillMenu-icon-chevron-right');
+    $('.myPBS-pillMenu-openCloseBtn').find('i').toggleClass('myPBS-pillMenu-icon-chevron-right');
     if(myPBS_PILL_MENU.open == false){
       myPBS_PILL_MENU.open = true;
       setTimeout(myPBSmenuTimer, 500);

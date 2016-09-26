@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>myPBS Pill Menu Widget</title>
+  <title>myPBS Pill Menu Widget</title>
 
-	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="HandheldFriendly" content="True">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
-	<!-- Global CSS -->
-	<link rel="stylesheet" type="text/css" media="screen" href="../dist/css/myPBS-pillMenu.css">
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <!-- Global CSS -->
+  <link rel="stylesheet" type="text/css" media="screen" href="../dist/css/myPBS-pillMenu.css">
 
-	<!-- Webslide Mega-menu -->
-	<!-- <link rel="stylesheet" href="../libs/webslide/full-width-menu/font-awesome/css/font-awesome.min.css" /> -->
+  <!-- Webfonts -->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600">
 
-	<!-- Webfonts -->
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600">
+  <style type="text/css">
+    body {
+      background: #fff;
+      padding: 0;
+      margin: 0;
+    }
+    .myPBS-pillMenu-menuSection {
+      display: none;
+    }
+    .myPBS-pillMenu-menuOffline {
 
-	<style type="text/css">
-		body {
-  		background: #fff;
-		}
-		.myPBS-pillMenu-collapsedMenu {
-			width: 135px;
-		}
-		.example-logo {
-			width: 55px;
-		}
-	</style>
-	
+    }
+  </style>
+  
 </head>
 
 <body>
 
-	<div class="myPBS-pillMenu-container clearfix">
-	 	
-		<div class="myPBS-pillMenu-content myPBS-pillMenu-overlapblackbg"></div>
-		<div class="myPBS-pillMenu-expanderMain slideRight">
-			<a id="myPBS-pillMenu-navToggle" class="myPBS-pillMenu-animated-myPBS-pillMenu-arrow slideLeft">
-				<span></span>
-			</a>
-			<a href="#" class="myPBS-pillMenu-smalLogo">
-				<img class="myPBS-pillMenu-pbsLogoMobile" src="../images/pbs-logo-bw-sm.png" alt="" />
-			</a>
-		</div>
+  <div class="myPBS-pillMenu-bootstrap myPBS-pillMenu-container clearfix">
 
-		<nav class="container-fluid">
-			<div class="row">
+    <div class="myPBS-pillMenu-content myPBS-pillMenu-overlapblackbg"></div>
+    <div class="myPBS-pillMenu-expanderMain slideRight">
+      <a id="myPBS-pillMenu-navToggle" class="myPBS-pillMenu-animated-myPBS-pillMenu-arrow">
+        <span></span>
+      </a>
+      <a href="#" class="myPBS-pillMenu-smalLogo">
+        <img class="myPBS-pillMenu-pbsLogoMobile" src="../images/pbs-logo-bw-sm.png" alt="PBS Logo" />
+      </a>
+    </div>
 
-				<!--Main Menu HTML Code-->
-				<nav class="myPBS-pillMenu-wsmenu myPBS-pillMenu-collapsedMenu myPBS-pillMenu-hideMenuSections slideLeft gry-grdt clearfix">
+    <nav class="container-fluid">
+      <div class="row">
 
-					<ul class="myPBS-pillMenu-mobile-sub myPBS-pillMenu-wsmenu-list">
-						<li><a href="#" class="active"><img class="example-logo" src="../images/PBS-logo.png"></a></li>
+        <!--Main Menu HTML Code-->
+        <nav class="myPBS-pillMenu-wsmenu myPBS-pillMenu-collapsedMenu myPBS-pillMenu-hideMenuSections myPBS-pillMenu-menuDisabled">
+
+          <ul class="myPBS-pillMenu-mobile-sub myPBS-pillMenu-wsmenu-list">
+            <li><a href="#" class="active myPBS-pillMenu-logo-btn"><img class="myPBS-pillMenu-logo" src="../images/myPBS-logo.png"></a></li>
+
+            <li class="myPBS-pillMenu-menuDisabledMsg">menu currently unavailable</li>
+
 
             <!-- Start Menu -->
             <li class="myPBS-pillMenu-menuSection">
@@ -62,7 +64,7 @@
                 
                 <!-- tabs left -->
                 <ul class="nav nav-tabs tabs-left col-lg-2">
-                  <li class="active"><a href="#p-schedules" data-toggle="tab">Schedules and Programs</a></li>
+                  <li class="active"><a href="#myPBS-PM-schedules" data-toggle="tab">Schedules and Programs</a></li>
                   <li><a href="#myPBS-PM-programOffers" data-toggle="tab">Program Offers</a></li>
                   <li><a href="#myPBS-PM-content" data-toggle="tab">Content Advisories and Flags</a></li>
                   <li><a href="#myPBS-PM-onAirFundraising" data-toggle="tab">On-Air Funraising</a></li>
@@ -89,14 +91,12 @@
                     <div class="row">
                       <div class="col-lg-12 col-md-12 col-xs-12">
                         <h3>Corporate Support</h3>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
-                          <li><a href="#">Braodcast Schdule Listings</a></li>
+                        <ul class="col-lg-5 col-md-5 col-xs-12 link-list">
+                          <li><a href="#">Broadcast Schdule Listings</a></li>
                           <li><a href="#">Long Lead Previews</a></li>
                           <li><a href="#">Week by Week</a></li>
                           <li><a href="#">Schdule Changes Announcements</a></li>
                           <li><a href="#">NPS Schdules</a></li>
-                        </ul>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
                           <li><a href="#">Video on Demand</a></li>
                           <li><a href="#">Video Portal Streaming Schedule</a></li>
                           <li><a href="#">Schdule View</a></li>
@@ -118,13 +118,11 @@
                     <div class="row">
                       <div class="col-lg-12 col-md-12 col-xs-12">
                         <h3>Title of Tab</h3>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
+                        <ul class="col-lg-5 col-md-5 col-xs-12 link-list">
                           <li><a href="#">Link 1</a></li>
                           <li><a href="#">Link 2</a></li>
                           <li><a href="#">Link 3</a></li>
                           <li><a href="#">Link 4</a></li>
-                        </ul>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
                           <li><a href="#">Link 5</a></li>
                           <li><a href="#">Link 6</a></li>
                           <li><a href="#">Link 7</a></li>
@@ -146,13 +144,11 @@
                     <div class="row">
                       <div class="col-lg-12 col-md-12 col-xs-12">
                         <h3>Title of Tab</h3>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
+                        <ul class="col-lg-5 col-md-5 col-xs-12 link-list">
                           <li><a href="#">Link 1</a></li>
                           <li><a href="#">Link 2</a></li>
                           <li><a href="#">Link 3</a></li>
                           <li><a href="#">Link 4</a></li>
-                        </ul>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
                           <li><a href="#">Link 5</a></li>
                           <li><a href="#">Link 6</a></li>
                           <li><a href="#">Link 7</a></li>
@@ -174,13 +170,11 @@
                     <div class="row">
                       <div class="col-lg-12 col-md-12 col-xs-12">
                         <h3>Title of Tab</h3>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
+                        <ul class="col-lg-5 col-md-5 col-xs-12 link-list">
                           <li><a href="#">Link 1</a></li>
                           <li><a href="#">Link 2</a></li>
                           <li><a href="#">Link 3</a></li>
                           <li><a href="#">Link 4</a></li>
-                        </ul>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
                           <li><a href="#">Link 5</a></li>
                           <li><a href="#">Link 6</a></li>
                           <li><a href="#">Link 7</a></li>
@@ -202,13 +196,11 @@
                     <div class="row">
                       <div class="col-lg-12 col-md-12 col-xs-12">
                         <h3>Title of Tab</h3>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
+                        <ul class="col-lg-5 col-md-5 col-xs-12 link-list">
                           <li><a href="#">Link 1</a></li>
                           <li><a href="#">Link 2</a></li>
                           <li><a href="#">Link 3</a></li>
                           <li><a href="#">Link 4</a></li>
-                        </ul>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
                           <li><a href="#">Link 5</a></li>
                           <li><a href="#">Link 6</a></li>
                           <li><a href="#">Link 7</a></li>
@@ -230,13 +222,11 @@
                     <div class="row">
                       <div class="col-lg-12 col-md-12 col-xs-12">
                         <h3>Title of Tab</h3>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
+                        <ul class="col-lg-5 col-md-5 col-xs-12 link-list">
                           <li><a href="#">Link 1</a></li>
                           <li><a href="#">Link 2</a></li>
                           <li><a href="#">Link 3</a></li>
                           <li><a href="#">Link 4</a></li>
-                        </ul>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
                           <li><a href="#">Link 5</a></li>
                           <li><a href="#">Link 6</a></li>
                           <li><a href="#">Link 7</a></li>
@@ -258,13 +248,11 @@
                     <div class="row">
                       <div class="col-lg-12 col-md-12 col-xs-12">
                         <h3>Title of Tab</h3>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
+                        <ul class="col-lg-5 col-md-5 col-xs-12 link-list">
                           <li><a href="#">Link 1</a></li>
                           <li><a href="#">Link 2</a></li>
                           <li><a href="#">Link 3</a></li>
                           <li><a href="#">Link 4</a></li>
-                        </ul>
-                        <ul class="col-lg-4 col-md-4 col-xs-12 link-list">
                           <li><a href="#">Link 5</a></li>
                           <li><a href="#">Link 6</a></li>
                           <li><a href="#">Link 7</a></li>
@@ -280,16 +268,16 @@
             </li>
             <!-- /end menu -->
 
-						<li><a href="#" class="myPBS-pillMenu-openCloseBtn"><i class="myPBS-pillMenu-icon-chevron-left myPBS-pillMenu-icon-chevron-right"></i></a></li>
+            <li><a href="#" class="myPBS-pillMenu-openCloseBtn"><i class="myPBS-pillMenu-icon-chevron-left myPBS-pillMenu-icon-chevron-right"></i></a></li>
 
-					</ul>
-				</nav><!--Menu HTML Code-->
-			</div>
-		</nav>
-	</div><!-- /myPBS-pillMenu-wsmenucontainer -->
+          </ul>
+        </nav><!--Menu HTML Code-->
+      </div>
+    </nav>
+  </div><!-- /myPBS-pillMenu-wsmenucontainer -->
 
-	<!-- Load JavaScript at the Bottom -->
-	<script src="../dist/js/main.min.js"></script>
+  <!-- Load JavaScript at the Bottom -->
+  <script src="../dist/js/main.min.js"></script>
 
 </body>
 </html>
