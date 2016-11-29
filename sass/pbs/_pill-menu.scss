@@ -14,10 +14,11 @@
   position: relative;
   padding: 0px;
   width: 100%;
-  width: 1200px;
+  // max-width: 1200px;
   background: rgba(0,0,0,0.75);
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
+  width: 100%;
 }
 
 
@@ -428,6 +429,12 @@ ul.myPBS-pillMenu-wsmenu-list > li:last-child {
     cursor: pointer;
   }
 
+  .link-list {
+    -webkit-columns: initial;
+    -moz-columns: initial;
+    columns: initial;
+  }
+
 
   /* Default Theme */
   .myPBS-pillMenu-wsmenu-submenu > li:hover>a {
@@ -467,7 +474,7 @@ ul.myPBS-pillMenu-wsmenu-list > li:last-child {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
-    min-height: 800px;
+    // min-height: 800px;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -477,6 +484,7 @@ ul.myPBS-pillMenu-wsmenu-list > li:last-child {
   .myPBS-pillMenu-expanderMain {
     display: block !important;
     position: relative;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -485,6 +493,10 @@ ul.myPBS-pillMenu-wsmenu-list > li:last-child {
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+    background: black;
+    height: 52px;
+    width: 100%;
+    z-index: 99999;
   }
 
 
@@ -672,7 +684,7 @@ ul.myPBS-pillMenu-wsmenu-list > li:last-child {
   }
   .mrginleft {
     // margin-left: 240px;
-    width: 80%;
+    // width: 80%;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -749,11 +761,15 @@ ul.myPBS-pillMenu-wsmenu-list > li:last-child {
     background-color: #fff !important;
   }
 
+  .mrginleft .myPBS-pillMenu-wsmenu {
+    width: 100%;
+  }
+
 
   /*Nav Expanding Open Effect*/
   .myPBS-pillMenu-wsmenu.menuopen {
     // width: 240px;
-    width: 80%;
+    // width: 80%;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -777,6 +793,18 @@ ul.myPBS-pillMenu-wsmenu-list > li:last-child {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 200;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .mrginleft .myPBS-pillMenu-animated-myPBS-pillMenu-arrow {
+    position: fixed;
+    right: 0;
+    left: initial;
+    top: -8px;
     z-index: 200;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -837,14 +865,15 @@ ul.myPBS-pillMenu-wsmenu-list > li:last-child {
   .myPBS-pillMenu-animated-myPBS-pillMenu-arrow span:after {
     transition: all 500ms ease-in-out;
   }
-  .myPBS-pillMenu-animated-myPBS-pillMenu-arrow.menuopen span {
+  .mrginleft .myPBS-pillMenu-animated-myPBS-pillMenu-arrow span {
     background-color: transparent;
   }
-  .myPBS-pillMenu-animated-myPBS-pillMenu-arrow.menuopen span:before,
-  .myPBS-pillMenu-animated-myPBS-pillMenu-arrow.active span:after {
+  .mrginleft .myPBS-pillMenu-animated-myPBS-pillMenu-arrow span:before,
+  .mrginleft .myPBS-pillMenu-animated-myPBS-pillMenu-arrow span:after {
     top: 7px;
+    background: #999;
   }
-  .myPBS-pillMenu-animated-myPBS-pillMenu-arrow.menuopen span:before {
+  .mrginleft .myPBS-pillMenu-animated-myPBS-pillMenu-arrow span:before {
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -852,7 +881,7 @@ ul.myPBS-pillMenu-wsmenu-list > li:last-child {
     -webkit-transform: rotate(45deg);
     bottom: 0px;
   }
-  .myPBS-pillMenu-animated-myPBS-pillMenu-arrow.menuopen span:after {
+  .mrginleft .myPBS-pillMenu-animated-myPBS-pillMenu-arrow span:after {
     transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
